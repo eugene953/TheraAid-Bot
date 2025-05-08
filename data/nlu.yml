@@ -1,0 +1,109 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - ya dey
+    - ya dey oh
+
+- intent: feeling
+  examples: |
+    - Via wa
+
+- intent: invite
+  examples: |
+    - Za ba for
+    - make we go, za ba for
+
+- intent: agree
+  examples: |
+    -Me gi ta via
+
+- intent: love
+  examples: |
+    -Me nuka via
+
+- intent: ask_help
+  examples: |
+    - Mou oh kie ver ni pweta mou
+
+- intent: selfcare_tip
+  examples: |
+    - Fi jaio va nia
+
+- intent: encourage
+  examples: |
+    - Oh chatmou
+
+- intent: sad_feelings
+  examples: |
+    - Fi  jaio  va nia 
+
+- intent: coping_methods
+  examples: |
+    - Mou pouni ni dor yrion
+
+- intent: panic_attack
+  examples: |
+    - A va camou ni zeine
+
+- intent: mental_health_info
+  examples: |
+    - Mou Boumo
+    - Fioly   
+
+- intent: motivate
+  examples: |
+    - Mou joua
+
+- intent: thank_you
+  examples: |
+    - Mou tamavia sia pwetamou
+
+- intent: lonely
+  examples: |
+    - Mou te Vi gini
+
+- intent: hopeless
+  examples: |
+    - Mou ke ka ebui  doui
+
+- intent: overwhelmed
+  examples: |
+    - Fei  drioa aussi
+
+- intent: insomnia
+  examples: |
+    - Moou ki kne
+
+- intent: stress
+  examples: |
+    - Bou buoa qui do rion
+    - Efoili et tshahbiou
+
+- intent: fear
+  examples: |
+    - Mou Boumo
+
+- intent: confused
+  examples: |
+    - Mou ki kah afa ni pou
+
+- intent: support_request
+  examples: |
+    - Mou ka ni Kchou ni vi moua
+
+- intent: positive_mood
+  examples: |
+    - mou tam mouh kaki azou
+
+- intent: checking_in
+  examples: |
+    - Via wa
+
+- intent: trauma
+  examples: |
+    - Mou wesa afa nana mouh piou
+
+- intent: hopelessness
+  examples: |
+    - Mou ki zou soni ni dou   

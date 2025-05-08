@@ -1,0 +1,131 @@
+version: "3.1"
+stories:
+- story: User greets
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: User feeing
+  steps:
+    - intent: feeling
+    - action: utter_feeling
+
+- story: User love
+  steps:
+    - intent: love
+    - action: utter_love
+
+- story: User agree
+  steps:
+    - intent: agree
+    - action: utter_agree
+
+- story: User invite
+  steps: 
+    - intent: invite
+    - action: utter_invite    
+
+- story: User asks for help
+  steps:
+    - intent: ask_help
+    - action: utter_ask_help
+
+- story: Feeling anxious
+  steps:
+    - intent: selfcare_tip
+    - action: utter_selfcare_tip
+
+- story: Feeling down
+  steps:
+    - intent: encourage
+    - action: utter_encourage
+
+- story: Feeling sad
+  steps:
+    - intent: sad_feelings
+    - action: utter_sad_feelings
+
+- story: Looking for coping methods
+  steps:
+    - intent: coping_methods
+    - action: utter_coping_methods
+
+- story: Panic episode
+  steps:
+    - intent: panic_attack
+    - action: utter_panic_attack
+
+- story: Asking about mental health
+  steps:
+    - intent: mental_health_info
+    - action: utter_mental_health_info
+
+- story: Needs motivation
+  steps:
+    - intent: motivate
+    - action: utter_motivate
+
+- story: Thanks the bot
+  steps:
+    - intent: thank_you
+    - action: utter_thank_you
+
+- story: Feels lonely
+  steps:
+    - intent: lonely
+    - action: utter_lonely
+
+- story: Feels hopeless
+  steps:
+    - intent: hopeless
+    - action: utter_hopeless
+
+- story: Feels overwhelmed
+  steps:
+    - intent: overwhelmed
+    - action: utter_overwhelmed
+
+- story: Can't sleep
+  steps:
+    - intent: insomnia
+    - action: utter_insomnia
+
+- story: Under stress
+  steps:
+    - intent: stress
+    - action: utter_stress
+
+- story: Afraid
+  steps:
+    - intent: fear
+    - action: utter_fear
+
+- story: Confused
+  steps:
+    - intent: confused
+    - action: utter_confused
+
+- story: Wants support
+  steps:
+    - intent: support_request
+    - action: utter_support_request
+
+- story: Feeling better
+  steps:
+    - intent: positive_mood
+    - action: utter_positive_mood
+
+- story: Just checking in
+  steps:
+    - intent: checking_in
+    - action: utter_checking_in
+
+- story: Remembering trauma
+  steps:
+    - intent: trauma
+    - action: utter_trauma
+
+- story: Feeling hopelessness
+  steps:
+    - intent: hopelessness
+    - action: utter_hopelessness

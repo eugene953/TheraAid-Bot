@@ -1,0 +1,46 @@
+{
+  "text": {
+    "ya": 9,
+    "dey": 1,
+    "via": 6,
+    "wa": 7,
+    "oh": 5,
+    "za": 10,
+    "ba": 0,
+    "for": 2,
+    "make": 4,
+    "we": 8,
+    "go": 3
+  },
+  "intent": {
+    "greet": 2,
+    "invite": 3,
+    "affirm": 0,
+    "deny": 1,
+    "mood_great": 4,
+    "mood_unhappy": 5
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 6,
+    "action_restart": 7,
+    "action_session_start": 9,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 8,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 10,
+    "action_unlikely_intent": 11,
+    "action_back": 0,
+    "action_extract_slots": 5,
+    "utter_cheer_up": 12,
+    "utter_did_that_help": 13,
+    "utter_goodbye": 14,
+    "utter_greet": 15,
+    "utter_happy": 16,
+    "utter_invite": 17
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

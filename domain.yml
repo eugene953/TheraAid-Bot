@@ -1,0 +1,112 @@
+version: "3.1"
+
+intents:
+  - greet
+  - invite
+  - love
+  - agree
+  - feeling
+  - ask_help
+  - selfcare_tip
+  - encourage
+  - sad_feelings
+  - coping_methods
+  - panic_attack
+  - mental_health_info
+  - motivate
+  - thank_you
+  - lonely
+  - hopeless
+  - overwhelmed
+  - insomnia
+  - stress
+  - fear
+  - confused
+  - support_request
+  - positive_mood
+  - checking_in
+  - trauma
+  - hopelessness
+
+responses:
+  utter_greet:
+    - text: "Ei ya dey, Me veka ne zokwe ne via, Na nia ya venne"
+
+  utter_invite:
+    - text: "Ei."
+
+  utter_love:
+    - text: "Ei, Me nuka via." 
+
+  utter_agree:
+    - text: "Ei, Me gi ta via."   
+
+  utter_feeling:
+    - text: "Mou te"
+
+  utter_ask_help:
+    - text: "Ya kido ve gini , ya  te ne via"
+
+  utter_selfcare_tip:
+    - text: "Ya  nou ajou ohhh, Ba pou pia ne zoi ne za na chiao"
+
+  utter_encourage:
+    - text: "Ya ki pei ta si fou shi"
+
+  utter_sad_feelings:
+    - text: "Ya ki dou rion,  Mou pou ne chou"
+
+  utter_coping_methods:
+    - text: "Ba pou pia ne zoi ne za na chiao"
+
+  utter_panic_attack:
+    - text: "Ze na kiki, Ya dou rion"
+
+  utter_mental_health_info:
+    - text: "Axiety ne fiolly or Mou Boumo"
+
+  utter_motivate:
+    - text: "Ya ka, Me lak ta vai "
+
+  utter_thank_you:
+    - text: "Mou do ne via"
+
+  utter_lonely:
+    - text: "Mou do ne via"
+
+  utter_hopeless:
+    - text: "A pou nauh, ba  belle kiki"
+
+  utter_overwhelmed:
+    - text: "Tuoh peve dou na fei ania"
+
+  utter_insomnia:
+    - text: "Ne zeine ajou ne via"
+
+  utter_stress:
+    - text: "Ze na kiki,"
+
+  utter_fear:
+    - text: "Me veka ne zokwe ne via"
+
+  utter_confused:
+    - text: "Ba kgono ni via"
+
+  utter_support_request:
+    - text: "Ei, Mou te  ni via , Ne Tchou"
+
+  utter_positive_mood:
+    - text: "A ze va na ahh"
+
+  utter_checking_in:
+    - text: "Mon tehh"
+
+  utter_trauma:
+    - text: "Ei ki commo ,Mou ya a tchou ku"
+
+  utter_hopelessness:
+    - text: "A ni fi ni teni chou"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
