@@ -129,3 +129,13 @@ stories:
   steps:
     - intent: hopelessness
     - action: utter_hopelessness
+
+- story: Self harm thoughts
+  steps:
+    - intent: self_harm_thoughts
+    - action: utter_refer_to_professional   
+
+- story: Express suicidal thoughts
+  steps:
+    - intent: express_suicidal_thoughts
+    - action: utter_refer_to_professional 

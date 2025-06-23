@@ -27,6 +27,10 @@ intents:
   - checking_in
   - trauma
   - hopelessness
+  - self_harm_thoughts
+  - express_suicidal_thoughts
+  - refer_to_professional 
+
 
 responses:
   utter_greet:
@@ -106,6 +110,9 @@ responses:
 
   utter_hopelessness:
     - text: "A ni fi ni teni chou"
+
+  utter_refer_to_professional:
+    - text: "Na emergency"  
 
 session_config:
   session_expiration_time: 60

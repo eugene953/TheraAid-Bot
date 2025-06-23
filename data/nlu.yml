@@ -107,3 +107,13 @@ nlu:
 - intent: hopelessness
   examples: |
     - Mou ki zou soni ni dou   
+
+- intent: self_harm_thoughts
+  examples: |
+    - Ne ponne tchoute bombiou 
+
+- intent: express_suicidal_thoughts
+  examples: |
+    - Ne ponne tchoute bombiou 
+    - ne kpia
+ 

@@ -1,34 +1,28 @@
 
+from rasa_sdk import Action
+import requests
 
-from typing import Any, Text, Dict, List
-from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+class ActionReferToProfessional(Action):
+    def name(self):
+        return "action_refer_to_professional"
 
+    def run(self, dispatcher, tracker, domain):
+        user_id = tracker.sender_id
+        intent = tracker.latest_message['intent'].get('name')
 
-class ActionDetectLanguage(Action):
-    def name(self) -> Text:
-        return "action_detect_language"
+        response = requests.post("http://your-node-backend.com/api/refer", json={
+            "userId": user_id,
+            "intent": intent
+        })
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        data = response.json()
 
-        user_message = tracker.latest_message.get('text', '').lower()
-
-        # Simple keyword-based detection
-        if "ya dey" in user_message:
-            return [SlotSet("language", "dialect")]
-        elif "how you dey" in user_message or "i dey" in user_message:
-            return [SlotSet("language", "pidgin")]
+        if data["success"]:
+            dispatcher.utter_message(text=f"You are being referred to {data['professional']['full_name']} — {data['professional']['specialization']}.")
         else:
-            return [SlotSet("language", "english")]
+            dispatcher.utter_message(text="No professional is available right now, but we’ll notify you soon.")
 
-
-
-
-
-
+        return []
 
 
 

@@ -1,0 +1,23 @@
+# Base Rasa SDK image
+FROM rasa/rasa-sdk:3.6.2 as action-server
+
+# Copy custom actions
+COPY actions /app/actions
+WORKDIR /app/actions
+RUN pip install -r requirements.txt
+
+# Base Rasa image
+FROM rasa/rasa:3.6.2-full
+
+# Copy Rasa files
+COPY . /app
+WORKDIR /app
+
+# Install any other requirements
+RUN pip install -r requirements.txt
+
+# Copy action server
+COPY --from=action-server /app/actions /app/actions
+
+# Run Rasa server with API and enable remote models
+CMD ["run", "--enable-api", "--cors", "*", "--debug"]

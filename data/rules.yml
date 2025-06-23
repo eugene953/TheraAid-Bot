@@ -130,3 +130,14 @@ rules:
   steps:
     - intent: hopelessness
     - action: utter_hopelessness
+
+- rule: self_harm_thoughts
+  steps:
+    - intent: self_harm_thoughts
+    - action: utter_refer_to_professional   
+
+- rule: express_suicidal_thoughts
+  steps:
+    - intent: express_suicidal_thoughts
+    - action: utter_refer_to_professional 
+
